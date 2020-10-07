@@ -1,1 +1,1 @@
-digraph G {a->b;a->c;b->c;b->d;c->a;e->b;e->d;}
+digraph G {a->b;b->c;b->d;c->a;}
