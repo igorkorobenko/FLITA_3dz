@@ -103,6 +103,15 @@ int main(void){
 
 // запись на языке DOT
 
+	char* graph_name = (char*) calloc(40, sizeof(char));
+
+	printf("The name of file .dot (without .dot)\n");
+	scanf("%s", graph_name);
+
+	char* graph_name_twin = (char*) calloc(40, sizeof(char));
+	strcat(graph_name_twin, graph_name);
+	strcat(graph_name, ".dot");
+
 	char* arr = (char*) calloc(500, sizeof(char));
 
 	if(bg == 1){
@@ -142,7 +151,7 @@ int main(void){
 
 	strcat(arr, "}");
 
-	FILE* f = fopen("graph.dot", "w");
+	FILE* f = fopen(graph_name, "w");
 	fprintf(f, "%s\n", arr);
 	fclose(f);
 
@@ -151,7 +160,9 @@ int main(void){
 	strcat(term, "echo \"");
 	strcat(term, arr);
 
-	strcat(term, "\" | dot -Tpng >./graph_pikcha.png");
+	strcat(term, "\" | dot -Tpng >./");
+	strcat(term, graph_name_twin);
+	strcat(term, ".png");
 	printf("%s\n", term);
 	system(term);
 	free(term);
