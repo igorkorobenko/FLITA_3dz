@@ -79,6 +79,7 @@
 
 ```
 
+![Alt-текст](https://github.com/igorkorobenko/FLITA_3dz/blob/main/terminal_dz2.png "териминал ДЗ")
 
 ## Визуализация вне программы, из файла с расширением .dot:
 ``` C
