@@ -79,7 +79,7 @@
 
 ```
 
-![Alt-текст](https://github.com/igorkorobenko/FLITA_3dz/blob/main/terminal_dz2.png "териминал ДЗ")
+![Alt-текст](https://github.com/igorkorobenko/FLITA_3dz/blob/main/terminal_dz2.png "териминал ДЗ2")
 
 ## Визуализация вне программы, из файла с расширением .dot:
 ``` C
@@ -116,3 +116,8 @@
 	free(file_s);
 	free(term);
 ```
+![Alt-текст](https://github.com/igorkorobenko/FLITA_3dz/blob/main/terminal_dz3.png "териминал ДЗ3")
+
+## Результат работы:
+
+![Alt-текст](https://github.com/igorkorobenko/FLITA_3dz/blob/main/graph.png "териминал ДЗ")
